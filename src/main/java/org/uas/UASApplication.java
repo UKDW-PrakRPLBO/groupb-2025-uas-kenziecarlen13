@@ -121,6 +121,8 @@ public class UASApplication {
         String username = scanner.nextLine();
         System.out.print("Enter password: ");
         String password = scanner.nextLine();
+
+        userRepository.insertUser(username, password, email);
     }
 
     public static void main(String[] args) {
